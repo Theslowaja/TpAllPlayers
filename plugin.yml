@@ -1,0 +1,14 @@
+name: tpAllPlayers
+author: Theslowaja
+main: Theslowaja\TpAllPlayers\TpAll
+api: 4.0.0
+version: 1.0.0
+
+commands:
+  tpall:
+    description: Teleport All Player
+    permission: tpall.command
+    
+permissions:
+  tpall.command:
+    default: op
