@@ -6,6 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\world\Position;
+use pocketmine\utils\Config;
 
 
 class TpAll extends PluginBase{
@@ -16,11 +17,11 @@ class TpAll extends PluginBase{
 				foreach ($this->getServer()->getOnlinePlayers() as $p) {
           if(count($args) == 1){
             $a = $this->getServer()->getPlayerByPrefix($args[0]);
-						$p->teleport($a);
-						$p->sendMessage("§l§8[§eTPAllPlayers§8] §r§8> §aTeleporting...\n");
+            $p->teleport($a);
+	    $p->sendMessage($this->getConfig()->get("Prefix")." " . str_replace("%toplayer", $a, $his->getConfig()->get("message-to-players"));
           } else {
             $p->teleport($sender);
-						$p->sendMessage("§l§8[§eTPAllPlayers§8] §r§8> §aTeleporting...\n");
+	    $p->sendMessage($this->getConfig()->get("Prefix")." " . $this->getConfig()->get("message-To-Yourself"));
           }
         }
         break;
