@@ -1,0 +1,9 @@
+Prefix: "§l§8[§eTPAllPlayers§8] §r§8>"
+
+# use %toplayer for player target
+
+message-to-players: "§aTeleporting to %toplayer...\n"
+
+# dont use %toplayer in message-To-Yourself
+
+message-To-Yourself: "§aTeleporting...\n"
