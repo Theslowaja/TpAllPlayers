@@ -1,6 +1,6 @@
 name: tpAllPlayers
 author: Theslowaja
-main: Theslowaja\TpAllPlayers\TpAll
+main: Theslowaja\tpAllPlayers\TpAll
 api: 4.0.0
 version: 1.0.0
 
