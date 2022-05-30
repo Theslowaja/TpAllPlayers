@@ -18,7 +18,7 @@ class TpAll extends PluginBase{
           if(count($args) == 1){
             $a = $this->getServer()->getPlayerByPrefix($args[0]);
             $p->teleport($a);
-	    $p->sendMessage($this->getConfig()->get("Prefix")." " . str_replace("%toplayer", $a, $his->getConfig()->get("message-to-players")));
+	    $p->sendMessage($this->getConfig()->get("Prefix")." " . str_replace("%toplayer", $a, $this->getConfig()->get("message-to-players")));
           } else {
             $p->teleport($sender);
 	    $p->sendMessage($this->getConfig()->get("Prefix")." " . $this->getConfig()->get("message-To-Yourself"));
